@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+  <style>
+   /*
+    h1::before {
+        content: '앞쪽>';
+        font-size: 35px;
+        color: aqua;
+    }
+    h1::after {
+        content: '<뒤쪽';
+        font-size: 35px;
+        color: burlywood;
+    }
+    h1::after{
+        content:''
+        
+    }
+    input[type="text"] {
+        background-color: red;
+        border: none;
+    }
+    input:focus:active {
+        border: none;
+    }
+    */
+
+    /*
+        p::first-letter{
+            font-size: 30px;
+        }
+        P::first-line{
+            background-color: aqua;
+        }
+        */
+
+    
+    /*
+        :nth-of-type(2){
+            background-color: antiquewhite;
+        }
+
+    */
+    
+    
+        /*
+        li{
+         list-style: none;
+         float: left
+         padding:15px;
+     }
+     li:first-child{
+         background-color: chartreuse;
+     }
+     li:last-child{
+         background-color: crimson;
+     }
+
+     li:nth-child(2){
+         background-color: coral;
+     }
+     li:nth-child(3){
+         background-color: deeppink;
+     }
+     li:nth-child(2n+1){
+         background-color: palevioletred;
+     }
+     li:nth-child(2n){
+         background-color: aqua;
+     }
+     li:nth-child(4)>a:hover{
+         color: red;
+     }
+    */
+    /*
+    .box li span{
+         background-color: blueviolet;
+     }
+     */
+    /* 
+         -자손선택자 후손선택자를 섞어서 쓸수 있다
+         -바로 밑에 애들을 끼고 >는 가능한데 하나 띄우고 >는 안된다
+         ex).box>ul li span 가능
+            .box>li span 불가능
+        -근데 다 후손선택자로는(전부 띄우고는) 가능
+         ex).box>li span 불가능
+            .box li span 가능
+         */
+        
+</style>
+
+</head>
+<body>
+<!-- 
+    * 후손선택자 & 자손선택자
+     후손선택자 : 해당요소의 하위요소에 있는 특정한 요소를 모두 서택하는 역할/ 
+     선택자A 선택자B 
+     자손선택자 : 해당요소의 바로 밑에 위치하는 특정한 요소를 선택하는 역할/
+     선택자A>선택자B 
+-->
+<!--
+    <DIV id="box"> 
+        <h1>제목1</h1> 
+        <h2>제목2</h2> 
+        <div class="box"> 
+            <h1>제목2</h1> 
+            <ul>
+              <h2>제목2</h2> 
+              <li>menu1</li> 
+              <li>menu2</li> 
+              <li><span>menu3</span></li> 
+              <li><a href="#">menu4</a></li> 
+            </ul> 
+            <a href="#">흠냐링</a> 
+            <h2>제목2</h2> 
+        </div>
+      <h2>제목2</h2> 
+    </DIV> 
+-->
+
+<!--
+     * 동위선택자 : 동위관계에 있는 요소중에 해당요소보다 뒤에 존재하는 특정한 요소를 선택할 때 사용! 
+
+     선택자a+선택자b : 선택자a 바로 뒤에 위치하는 선택자b를 선택 
+     선택자a~선택자b : 선택자a 뒤에 위치하는 선택자b를 모두 선택 
+-->
+
+<!--
+     <h1>제목</h1>
+     <h2>제목2</h2> 
+     <h2>제목2</h2> 
+     <h2>제목2</h2> 
+     <h2>제목2</h2>
+     <h2>제목2</h2>
+
+     ex) 
+     h1+h2{
+        background-color: aqua;
+         }
+-->
+
+<!-- 
+    * 반응선택자 : 사용자가 마우스를 이용해서 혹은 특정한 행동(반응)을 취했을때 css속성을 지정할 수 있는 선택자 
+    :hover 특정한 요소에 마우스를 올렸을때 
+    :active 특정한 요소에 마우스를 클릭했을떄 
+    
+    ex) h1:active{ 
+        /* 특정한 요소에 마우스를 올렸을때! */
+        background-color:aqua;} 
+    
+-->
+<!--
+     * 구조선택자 : 부모의 요소 안에서 특정한 위치의 요소를 선택할때 사용 
+                   후손+자손 선택자와 함꼐 많이 사용 ! 
+                   ex) li:first-child
+     first-child : 같은 부모박스 안에서 형제관계중 첫번째 해당하는 요소를 선택하는 선택자 
+     last-child : 부모아래에서 형제관계의 마지막번쨰에 해당하는 요소를 선택 
+     nth-child : 형제관계의 순번째에 위치하는 요소를 선택 1,2,~ 홀수(2n+1) 짝수(2n) 
+     nth-last-child : 형제관계중에 뒤에서 수열번째에 위치하는 요소를 선택 
+-->
+
+
+<!--
+     <ul>
+        <li>menu-1</li> 
+        <li>menu-2</li> 
+        <li>menu-3</li> 
+        <li><a>menu-4</a></li>
+        <li>menu-5</li> 
+        <li>menu-6</li> 
+    </ul> 
+-->
+
+<!--
+     * 형태구조선택자 : 일반구조선택자와 비슷하지만 태그형태를 구분 
+     first-of-type = 부모박스 안에서 형제관계 중에서 첫번쨰위치하는 태그를 선택 
+     last-of-type = 부모박스 안에서 형제관계 중에서 마지막번째 위치하는 태그를 선택 
+     nth-of-type =부모박스 안에서 형제관계 중에서 수열번째에 위치하는 태그를 선택 
+     nth-last-of-type = 부모박스 안에서 형제관계 중에서 뒤에서 수열번째 위치하는 태그를 선택 
+-->
+
+ <!--
+    <h1>header1</h1> 
+    <h2>header2</h2> 
+    <h3>header3</h3> 
+    <h1>header1</h1>
+    <h3>header3</h3> 
+    <h2>header2</h2> 
+    <h1>header1</h1> 
+-->
+
+<!-- 
+    * 문자선택자
+     ::first-letter 특정한 선택자에 첫번째 글자를 선택 
+     ::first-line 첫줄에 해당하는 부분 
+-->
+
+
+<!--
+    <p>안녕하세용<br/> 
+        저는 유진이엥옹</p> 
+    
+-->
+
+<!-- 
+    * 가상요소선택자 : 선택될 요소의 앞 혹은 뒤쪽의 가상의 요소를 넣어서 표현 
+    ::before 특정요소의 앞에 삽입, 내용, 가상의 요소를 부여 
+    ::after 특정요소의 뒤에 삽입,내용이나 가상의 요소를 부여 
+-->
+
+<!-- 
+    <h1>안녕하세용</h1>
+    <input type="text">
+-->
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>boxxxxx</title>
+<style>
+
+.box{
+width:200px;
+height:200px;
+border:3px solid #000;
+float:left;
+margin-right:30px;
+}
+.box2{
+clear:left; /*2번에서 끝나서 한텀 쉬고 3번은 옆에 붙음*/
+}
+.box3{
+width: 200px;
+}
+/*img{
+float:left;
+*/
+/*
+  left:왼쪽으로 부터 오른쪽으로 나열되게 해주는 성격 왼쪽부터 1번임
+  right:오른쪽으로부터 왼쪽으로 나열되게 해주는 성격 오른쪽부터 1번임
+  none:기본값 나열 없애고 싶을때
+*/
+
+p{
+float:left;
+}
+</style>
+</head>
+<body>
+<!--
+float:박스를 옆으로 나열 할때/ 떠다니는~ 뜻/
+레이아웃을 나열하거나 형성 + 삽화를 넣을때
+-->
+<div class="box">1</div>
+<div class="box box2">2</div>
+<div class="box box3">3</div>
+<!--
+clear: float와 함께 사용,flaot제거할때 사용
+left:좌측 나열을 제거/right:우측 나열을 제거
+both:양쪽 나열을 제거
+-->
+</body>
+</html>

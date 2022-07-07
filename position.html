@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        /*
+        body{
+            height: 3000px;
+        }
+        .p1{
+            width: 300px;
+            height: 300px;
+            background-color: bisque;
+            line-height: 300px;
+            text-align: center;
+            font-size: 30px;
+            위치지정시 같이 사용 가능한 속성
+             X : left right
+             Y : top bottom
+            */
+            /*
+            position: relative;
+            top:80px;
+            left: 80px;
+            
+            static : 포지션 기본값(위치의 영향을 받지 않음)
+
+            relative : 상대위치(박스가 나열되는 순서대로 위치가 지정)
+               - top,left만 지정가능 부모 포지션으로 많이 사용
+               <시작 좌표가 다른 박스들의 위치를 지나서 시작함>
+
+            absolute : 절대위치(박스에 대한 영향을 전혀 안받음)
+               - html 화면 기준으로 위치가 지정  위치값 모두 적용 가능
+                , 부모의 포지션이 존재할때는 부모의 기준으로 위치가 지정
+
+                <부모가 없다면 다른 박스가 있던 말던 내 시작점은 그냥 완전 (0,0)이야
+                  지정만 한다면 글씨 위로도 올라갈수도 있음>
+
+            fixed : 고정위치(html 화면 기준으로 위치가 지정)
+               - 위치 모두 적용가능 고정된 상태로 표현(메뉴,배너 등) 
+               <부모가 있든 없든 무조건 (0,0)이야>
+            */
+         /*   
+        }
+        #box{
+            width: 800px;
+            height: 800px;
+            border: 1px solid #000 ;
+            margin: 150px auto;
+            position:relative;
+            /*부모가 relative일때는 마진값이 적용이 되지만 absolute는 적용안댐*/
+        
+    
+        
+    </style>
+</head>
+<body>
+    <h1>position</h1>
+    <p>요소를 특정한 위치로 지정하여 배치하는 속성/
+        어떻게 위치할지 결정하는 속성
+    </p>
+   
+
+<div id="box">
+    <div class="p1">
+        position
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>box</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            .box {
+                width: 100%;
+                /* 부모기준에 따른 양으로 표현/ 추가되는 요소를 포함하지 않으며, 넘치게 만들수 있음*/
+                height: 100px;
+                background-color: skyblue;
+                padding-left: 50px;
+            }
+            .box1 {
+                width: auto;
+                /* 부모기준에 따른 양으로 표현/ 추가되는 요소를 함꼐 가져가며 폭값을 유지하기 위해 노력*/
+                height: 100px;
+                background-color: navy;
+                padding-left: 50px;
+            }
+            #all {
+                width: 700px;
+                height: 250px;
+                border: 1px solid #f00;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="all">
+            <div class="box">100%</div>
+            <div class="box1">100%</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>box</title>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .box {
+        width: 300px;
+        height: 300px;
+        background-color: skyblue;
+        padding: 40px 20px 50px 10px;
+        /*한자리 4방향 / 두자리 상하,좌우 / 네자리 (top>right>bottom>left)*/
+        margin: 20px 50px 0 100px;
+        /*한자리 4방향 / 두자리 상하,좌우 / 네자리 (top>right>bottom>left)*/
+        margin: 100px auto;
+        /*block요소만  사용가능 사이즈가 있을시 요소의 중심배치/위아래는 지정할수 있음*/
+        border: 5px solid #f00;
+        border-radius: 100px 20px 50px 150px;
+        /*모서리를 둥글게 표현 px,%
+한자리 네방향 / 두자리 왼쪽상단을 시작으로 대각선 방향(오른쪽하단) / 네자리(왼쪽상단>시계방향)
+*/
+    }
+</style>
+</head>
+<body>
+<div class="box">box</div>
+</div>
+</body>
+</html>

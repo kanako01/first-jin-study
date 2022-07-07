@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+        }
+        table{
+            border:2px solid #000;
+            margin: 100px;
+             border-collapse:collapse;
+            /*table과 td사이의 선값 결합 유무를 결정하는 속성
+            separate( 기본값 - 틈이 생긴상태)
+            collapse(선과 선사이의 틈을 병합)-table 표현시 기본값*/ 
+
+           /* border-spacing: 30px;
+            테두리와 셀들의 간격을 지정하는 값
+            2자리 입력시 - 수평, 수직관계
+            collapse를 쓴 상태에서는 사용 불가 ~
+            */
+            empty-cells: hide;
+            /*내용이 안 적힌 빈셀의 보여지는 유무를 결정
+            hide(사라지게) show(보이게)*/
+        }
+        td{
+            border:2px solid #000;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+           vertical-align: top;
+           /*수직에 대한 정렬 - td칸은 middle기본값
+           top-위쪽 bottom-아래쪽
+           div태그나 다른 태그에서는 통하지 않음*/
+        }
+       /*
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 2px solid #000;
+            text-align: center;
+            vertical-align: middle;
+        }
+        */
+    </style>
+</head>
+<body>
+    <!--
+        <table>
+        <caption>표의 구조(의미)</caption>
+        <thead>의미론적으로 태그임 그냥 머리,바디,하단을 나타낸다
+        <tr>
+            <th>table 머리</th>
+            <th>table 머리</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>table 내용</td>
+                <td>table 내용</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>table 하단</td>
+                <td>table 하단</td>
+            </tr>
+        </tfoot>
+    </table>
+-->
+
+    <table>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>      
+    </table>
+
+    <!--<div class="box">
+        d안녕하세영
+    </div>-->
+</body>
+</html>

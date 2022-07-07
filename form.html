@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin-bottom: 30px;
+        }
+        input[type="text"]:focus{
+            background-color: aquamarine;
+            outline:none;
+            border: none;
+            color: blue;
+            font-weight: 900;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+       웹페이지에서의 입력양식  그룹 / 원하는 정보를 연결하여 전달받기 위한 
+       명확한 폼양식
+
+       [폼에 쓰이는 속성]
+       name : "폼의 이름/ 폼을 식별하기 위한 이름"
+       mathod : "폼을 서버로 전송할때 http 메소드를 지정"
+       ( = 전송방식 2가지 설정)
+       1.get= "주소표시줄에 사용자가 입력한 내용이 그대로 표시"
+       2.post="가장 많이 사용하는 방식 내부적으로 보이지 않게 전송"(개인정보를 지키기 위해)
+    -->
+    <h1>입력양식태그(서식)</h1>
+    <p>: 사용자의 정보나 회원가입, 검색 등과 같은 다양한 정보를 입력 받을때 사용하는 (폼,서식)</p>
+
+
+    <form>
+        <!--하나의 입력양식을 묶어주기 위한 태그/서버와 연동시키기  위한 요소
+        input 서식을 표현하는 태그 type="다양한 서식값" 글자와 같은 성격
+        -->
+        <div>
+            <label>가로글자입력양식</label> <!--inline성격/폼요소의 안내,명시-->
+            <input type="text" name="id">
+        </div>
+        <div>
+            <label>비밀번호입력양식(암호화된 표기)</label>
+            <input type="password" name="pw">
+        </div>
+        <div>
+            <label>검색필드 : 검색키워드 입력(X)</label>
+            <input type="search" name="sh">
+        </div>
+        <div>
+            <label>전화번호 : tel(모바일확인가능 - 키패드)</label>
+            <input type="tel" name="tel" placeholder="010-0000-0000"><!--placeholder 넣으면 예시처럼 생길수 있다-->
+        </div>
+        <div>
+            <label>이메일: e-mail</label>
+            <input type="email" name="em">
+        </div>
+        <div>
+            <label>체크박스 : 여러개의 항목을 체킹할때</label>
+            <input type="checkbox" name="chek">체크1
+            <input type="checkbox">체크2
+            <input type="checkbox">체크3
+            <input type="checkbox">체크4
+        </div>
+        <div>
+            <label>라디오버튼 : 단일항목체크시</label>
+            <input type="radio" name="aa">체크1
+            <input type="radio" name="aa">체크2
+            <input type="radio" name="aa">체크3
+            <input type="radio" name="aa">체크4
+            <!--네임명을 동일하게 표현-->
+        </div>
+        <div>
+            <label>날짜</label>
+            <input type="date" name="date">
+        </div>
+        <div>
+            <label>url</label><!--전송프로토콜 연결을 무조건 해야한다 중뇨 ~-->
+            <input type="url" name="www" value="http://"><!--월드와이드웹 world wide web-->
+        </div>
+        <div>
+            <label>숫자</label>
+            <input type="number" name="op" min="1" max="20" step="2"> 
+            <!--최소값 min 최대값 max  둘다 넘길수 없다
+                step 버튼 올라가는 값--> 
+        </div>
+        <div>
+            <label>색상</label>
+            <input type="color" name="c"><!--컬러패널이 나온다-->
+        </div>
+        <div>
+            <label>첨부파일</label>
+            <input type="file" name="dw">
+        </div>
+        <div>
+            <label>셀렉트박스-펼쳐지는 메뉴항목</label>
+            <select>
+                <option>메뉴1</option>
+                <option>메뉴2</option>
+                <option>메뉴3</option>
+                <option>메뉴4</option>
+            </select>
+        </div>
+        <div>
+            <label>많은 양의 text</label>
+            <textarea></textarea><!--박스를 늘려 많은 양을 담을수 있다 요즘은 많이 사용 안함-->
+        </div>
+        <div>
+            <label>버튼</label>
+            <input type="submit" value="확인">
+            <input type="reset" value="취소">
+            <input type="button" value="버튼">
+            <!--
+                submit 제출용 버튼설정 
+                reset 다시쓰기용
+                button 일반 버튼
+             -->
+             <button type="submit">확인</button><!--버튼에도 같은 방법이 있다-->
+             <button type="reset">취소</button>
+             <button type="button">버튼</button>
+        </div>
+    </form>
+</body>
+</html>

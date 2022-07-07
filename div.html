@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>div</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            .box {
+                color: #fff;
+
+                font-size: 30px;
+                font-weight: 900;
+                background-color: navy;
+                /*box-size 영향을 주는 스타일*/
+                width: 400px;
+                /*넓이,가로폭 = px,%,auto....*/
+                height: 400px;
+                /*높이,세로폭 = px,%,auto....*/
+                border-right: 5px solid red;
+                /* 선 = 굵기 , 스타일 , 색상*/
+                padding: 50px;
+                /* 안쪽여백 - 안쪽으로 내용물들과 박스 사이의 틈!
+(한자리) 전체면 적용
+*/
+                margin: 100px;
+                /* 바깥여백 - 바깥으로 박스혹은 다른 요소와의 틈!!
+(한자리)전체면 적용
+*/
+            }
+        </style>
+    </head>
+    <body>
+        <!-- div: 공간분할태그 block: 박스와 같이 쌓이면서 나타나는 성격/사이즈를 입력하지 않으면 화면 전체를 사용하는 태그>>div,h1
+        inline: 글자와 같이 옆으로 나열되며 나타나는 성격/내용의 폭밧, 화면의 일부를 차지하는 태그
+        width,height,margin-top,bottom 적용X -->
+
+        <div class="box">box</div>
+
+    </body>
+</html>

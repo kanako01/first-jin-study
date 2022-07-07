@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td,table,th{
+            border: 2px solid #000;
+        }
+        td,th{
+            width: 200px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>표관련 태그</h1>
+    <!--
+        table : 표를 나타내는 태그
+
+        table>tr(줄,행)>td(칸,열)
+
+        표의 기본구조 : table>tr>td
+        table: 표를 감싸는 부모태그
+        tr: 행, 표 위에서 아래로 만들어지는 줄에 해당하는 부분
+        td: 열, 표에서 옆으로 만들어지는 칸에 해당하는 부분으로 
+            안쪽에 내용물을 넣어서 표현
+
+        *표를 읽을 때는 몇줄 몇칸이라고 읽음
+
+        기본선택자로 선을 부여하여 표현
+    -->
+    <!-- th: table의 head 구분을 지을때 사용/ 자동으로 굵은 글씨로 표현
+    기본적으로 적용되는 스타일: text-align , font-blind-->
+
+
+   <table>
+       <caption>table의 제목</caption>
+       <!--표의 정중앙에 제목,정의를 표현해줌-->
+    <tr>
+        <th>table1</th>
+        <th>table1</th>
+    </tr>
+    <tr>
+        <td>table2</td>
+        <td>table2</td>
+    </tr>
+    <tr>
+        <td>table3</td>
+        <td>table3</td>
+    </tr>
+    </table>
+<br/>
+<br/>
+<br/>
+
+<table>
+    <caption>table의 병합</caption>
+    <tr>
+        <td colspan="3">1</td>
+        <!--<td>2</td>
+        <td>3</td>-->
+        <td rowspan="4">4</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <!--<td>8</td>-->
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <!--<td>12</td>-->
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+        <!--<td>16</td>-->
+    </tr>
+</table>
+<!---->
+
+</body>
+</html>

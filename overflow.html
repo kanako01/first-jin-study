@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+       
+        .c1{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            float: left;
+            margin: 10px;
+        }
+        .c2{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            float: left;
+            margin: 10px;
+        }
+        .c3{
+            width: 200px;
+            overflow: hidden;
+            border: 1px solid #000;
+            float: left;
+            margin: 10px;
+        }
+        .c4{
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border: 1px solid #000;
+            float: left;
+            margin: 10px;
+        }
+        .c5{
+            width: 200px; 
+            height: 200px;  
+            overflow: scroll;
+            /* 안에 컨텐츠가 넘치는 경우 스크롤처리
+            내용물이 넘치지 않아도 스크롤 생성
+            */
+            border: 1px solid #000;
+            float: left;
+            margin: 10px;
+            overflow-x: hidden;
+            /* x축(가로)의 넘치는 내용물을 어떻게 보여질지 결정하는 속성 
+            1.오버플로 스크롤처리/x,y설정
+            2.오버플로 히든처리 /x,y설정
+            */
+            
+        }
+    </style>
+</head>
+<body>
+    <!--
+        overflow : 부모 박스에서 내용물이 넘치는 경우
+         어떻게 보여질지 결정하는 속성
+    -->
+
+    <div class="cl">
+        <h4>컨텐츠양이 일정</h4>
+        <P>
+         when an unknown printer took a galley of type and scrambled it to make
+          a type specimen book.
+        </P>
+    </div>
+    <div class="c2">
+        <h4>컨텐츠양이 많거나 유동 흘러내림</h4>
+        <P>
+        Lorem Ipsum has been the industry's standard dummy text 
+        ever since the 1500s,when an unknown printer took a galley of 
+        type and scrambled it to make a type specimen book.
+        </P>
+    </div>
+    <div class="c3">
+        <h4>컨텐츠의 양에따라 높이가 늘어남</h4>
+        <P>
+        Lorem Ipsum has been the industry's standard dummy text 
+        ever since the 1500s,when an unknown printer took a galley of 
+        type and scrambled it to make a type specimen book.
+        </P>
+    </div>
+    <div class="c4">
+        <h4>박스의 높이에 따라 컨텐츠가 안보이게 처리</h4>
+        <P>
+        Lorem Ipsum has been the industry's standard dummy text 
+        ever since the 1500s,when an unknown printer took a galley of 
+        type and scrambled it to make a type specimen book.
+        </P>
+        </div>
+    </div>
+    <div class="c5">
+        <h4>스크롤처리</h4>
+        <P>
+        Lorem Ipsum has been the industry's standard dummy text 
+        ever since the 1500s,when an unknown printer took a galley of 
+        type and scrambled it to make a type specimen book.
+        </P>
+    </div>
+</body>
+</html>

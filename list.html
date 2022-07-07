@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+        }
+        li{
+            list-style: circle;
+            /* li태그의 스타일을 결정하는 속성 /
+             li-사용시 기본설정값 none*/
+             
+        }
+        ol{
+        padding-left: 30px;  
+        line-height: 30px;    
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            margin:100px auto;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        ul(순서가 없는 목록태그 - 메뉴가 많을때/ 기호(블릿) ul>li )
+        ol(순서가 있는 목록태그) - 순서나열/1,2,3,....ol>li
+        dl(정의목록태그,용어 뜻을 나열)/dl > dt,dd
+    -->
+    <div class="box">
+    <ol>
+        <li>회사소개</li>
+        <li>생산설비</li>
+        <li>제품소개</li>
+        <li>온라인문의</li>
+        <li>커뮤니티</li>
+    </ol>
+</div>
+</body>
+</html>
