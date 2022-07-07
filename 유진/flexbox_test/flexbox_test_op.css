@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    transition: all 0.7s;
+}
+body{
+    color: #191919;
+    font-size: 14px;
+}
+a{
+    color: #191919;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    display: block;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    overflow: hidden;
+    border-bottom: 1px solid #191919;
+    display: flex;
+    justify-content: space-around;
+}
+header>a{
+   
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 10vh;
+    padding: 0 30px;
+}
+header>ul{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+}
+header ul li{
+    padding: 0 30px;
+}
+.container{
+    display: flex;
+}
+nav{
+    flex:1 1 15%;
+    height: 80vh;
+    border-right: 1px solid #191919;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.keyword{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.item{
+    border: 1px solid #191919;
+    padding: 4px;
+    margin: 7px;
+    font-size: 13px;
+}
+nav>h1{
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+section{
+    flex: 1 1 70%;
+    height: 80vh;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.contents{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    width: 31.3%;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 22.5vh;
+    margin: 0 1%;
+    margin-bottom: 3vh;
+}
+aside{
+    flex: 1 1 15%;
+    height: 80vh;
+    border-left: 1px solid #191919;
+    padding: 30px;
+    box-sizing: border-box;
+}
+aside>h1{
+    margin-bottom: 20px;
+}
+footer{
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    line-height: 10vh;
+    border-top: 1px solid #191919;
+}
+@media screen and (max-width:1024px) {
+    .container{
+        flex-direction: column;
+    }
+    nav{
+        border-right: none;
+        border-bottom: 1px solid #191919;
+    }
+    aside{
+        border-left:none ;
+        border-top: 1px solid #191919;
+    }
+    .box {
+        margin-bottom: 1vh;
+    }
+}
+@media screen and (max-width:768px) {
+    header>ul{
+        display: none;
+    }
+    aside{
+        order: 1;
+        background-color: black;
+        color: #fff;
+        border: none;
+    }
+    nav{
+        order: 2;
+    }
+    section{
+        order: 3;
+    }
+    .box {
+       width: 48%;
+       margin: 1%;
+       height: 20.5vh;
+    }
+}

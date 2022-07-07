@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        padding:0;
+        margin: 0;
+    }
+    body{
+        background-color: rgb(83, 78, 71);
+    }
+    .ani{
+        width: 200px;
+        height: 200px;
+        background-color: azure;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-100px,-100px);
+        /*위치 이동시 margin을 대신하여 사용가능!*/
+        animation-name: test;
+        /*표현하고자 하는 요소에 "애니메이션 이름*/
+        animation-duration: 2s;
+        /*애니메이션 동작에 대한 시간 - 지속될 시간*/
+       /* animation-fill-mode: forwards;
+        애니메이션 동작 끝지점에서 마무리(infinite는 끝이 없기 때문에 안먹힌다)*/
+        animation-iteration-count: infinite;
+        /*애니메이션의 횟수 = 숫자값(횟수), infinite(무한반복)-*/
+        animation-direction: alternate;
+        /*애니메이션의 방향 - normal(기본값 0~100)/reverse(반전,반대방향,역순)
+        alternate 0~100 교차반복
+        */
+        animation-delay:2s ;
+        /* 애니메이션 지연값 */
+        animation-timing-function:linear;
+        /*시간별 속도감 변화 이징*/
+    }
+    .ani:hover{
+        animation-play-state: paused;
+    /*애니메이션 효과의 재생 혹은 중지 paused(멈춤)*/
+    }
+    /*keyframes - 구간별로 스타일을 부여하여 동작을 표현
+    0%, from >>  시작점
+    1~99%  >>   중간 구간도 표현가능
+    100%, to >> 끝점
+    */
+    @keyframes test{
+       100%{
+        background-color: cadetblue;
+        transform: translate(-200px,-150px);
+       }
+    }
+</style>
+</head>
+<body>
+    <!--animation: 각각의 "프레임"내에서 스타일을 구현하여 동작을 만들떄 사용-->
+    <div class="ani">
+        <img src="klipartz.com.png" alt="/">
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+        p{
+            margin-bottom: 30px;
+        }
+        .test1{
+            font-family: "궁서";
+        }
+        .test2{
+            font-family: 'Black Han Sans', sans-serif; 
+        }
+        .test3{
+            font-family: 'Stylish', sans-serif;
+            font-size: 26px;
+        }
+        @font-face{
+            font-family:"tvn";
+            src:url(tvN즐거운이야기Bold.ttf);
+        }
+        @font-face {
+             font-family: 'ParkYongJun';
+             src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/ParkYongJun.woff2') format('woff2');
+             font-weight: normal;
+             font-style: normal;
+        }           /*무료사이트 구글폰트, 눈누*/
+        .test4{
+            font-family: 'ParkYongJun';
+            font-size: 26px;
+        }
+    </style>
+</head>
+<body>
+    <h1>웹폰트</h1>
+    <P class="test1">
+        webfont - 링크, 도메인, 브라우저와 상관없이 웹페이지 내에 폰트가 연결되어지는 것<br/>
+        일반적으로 스타일을 이용해서 연결하는 방법 - 내 컴퓨터 내에 설치된 폰트가 존재
+    </P>
+    <p class="test2">
+        webfont-cdn 즉 링크를 이용해서 서버상의 폰트를 가져와서 웹페이지에 전달하는 방법<br/>
+        느려지거나 폰트가 나타나지 않는 경우가 생길 수 있음!
+        <!--남의 폰트를 그냥 가져와서 쓰는 것임 / 구글폰트 "링크" 빙법(title 밑에)-->
+    </p>
+    <p class="test3">
+        webfont-cdn 즉 링크를 이용해서 서버상의 폰트를 가져와서 웹페이지에 전달하는 방법<br/>
+        느려지거나 폰트가 나타나지 않는 경우가 생길 수 있음!
+        <!--남의 폰트를 그냥 가져와서 쓰는 것임 / 구글폰트 "import" 방법 style 내부에-->
+    </p>
+    <P class="test4">
+        @font-face<br/>
+        폰트파일을 다운받거나 , 가져와 문서와 직접 연결하여 폰트를 선언하는 방식<br/>
+        빠르게 웹사이트에 적용 가능 - 오류가 적음!<br/>
+        웹폰트 확장자 종류<br/>
+        eot : IE8이하 <br/>
+        ttf : 가장 기본 , 압축을 푸는 형태로 많이 사용 <br/>
+        otf : mac용<br/>
+        woff : 대부분의 브라우저에서 지원<br/>
+        woff2 : woff보다 압축률이 더 좋음(용량이 가볍다)
+    </P>
+</body>
+</html>

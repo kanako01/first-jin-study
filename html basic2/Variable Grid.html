@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #wrap{
+            width: 63.16%; /* (1200/1900)*100=63.157 */
+            overflow: hidden;
+            margin: 150px auto;
+            background-color: aqua;
+        }
+        header{
+            width: 100%; /*자기랑 부모랑 둘다 1200*/
+            height: 100px;
+            background-color: aquamarine;
+        }
+        section{
+            width: 51.67%; /* (620/1200)*100=51.666 */
+            float: left;
+            height: 300px;
+            background-color: cornflowerblue;
+        }
+        aside{
+            width: 45%; /* (540/1200)*100=45 */
+            float: right;
+            height: 300px;
+            background-color: coral;
+        }
+        footer{
+            width: 100%;
+            background-color: darkcyan;
+            height: 100px;
+            clear: both;
+        }
+        aside img{
+            max-width:100%; /*최대치 - 부모기준으로 최대치*/
+        }
+    </style>
+</head>
+<body>
+    <!--가변그리드 : 화면사이즈에 따라서 변하는 사이즈-->
+    <div id="wrap">
+        <header>가변그리드</header>
+        <section>그리드 : 디자인 작업 혹은 표현시에 일정한 형태의 
+            틀을 두고 레이아웃을 형성하는 것을 그리드라고 한다.</section>
+            <aside>
+                <img src="https://contents.lotteon.com/itemimage/_v001732/LO/16/82/43/57/92/_1/68/24/35/79/3/LO1682435792_1682435793_1.jpg/dims/optimize/dims/resizemc/400x400">
+            </aside>
+            <footer>px(고정값) %(가변값)/ 반응형웹을 위한 가장 기본 베이스</footer>
+            
+    </div>
+    <!--
+        px > 고정값
+        %  > 비율 (부모의 폭의 기준으로 양이 결정)
+
+
+        요소의 넓이/요소의 부모 넓이 = 값 *100 = 넓이 값 % >>
+        소수점 3번째자리 반올림
+    -->
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+        }
+        #all{
+            width: 700px;
+            overflow: hidden;
+            padding: 30px;
+            border: 3px dashed #000;
+            margin: 150px auto;
+        }
+        .line{
+            width: 30px;
+            height: 30px;
+            margin: 10px 0;
+            position: relative;
+            top:0;
+            left:0;
+            transition:all 0.8s linear;
+            /*transition : 한꺼번에 사용가능
+            all - 시간 - 이징효과 - 지연시간
+            */
+
+            /*
+            동작을 부여할때 사용
+            함께 사용가능한 속성의 종류
+
+            위치 - top,left, right,bottom(포지션 값도 가능하다)
+            사이즈 - width,height,margin,padding, font-size
+            색상 - color, bg-color,opacity
+            변형 - transform
+            */
+
+            /*transition-duration:1s ;
+            동작 구현에 대한 시간 값~ 얼마동안 ~
+            1초로 설정해놨을때 ease값이 들으가도 무조건 다들 1초만에 이루어짐
+            */
+        }
+        .line:nth-child(1){
+            background-color: cornflowerblue;
+            /* transition-delay: 0s;
+             지연시간 ~ 후에 진행*/
+             /*transition-timing-function:ease ;
+             시간에 따른 움직이는 속도의 값~ 
+              linear - 일정한 값
+              ease 기본값
+              ease-in 속도의 시작이 느리게
+              ease-out 속도의 끝을 느리게
+              ease-in-out 느리게 시작해서 느리게 끝남
+             */
+        }
+        .line:nth-child(2){
+            background-color: rgb(100, 237, 118);
+            /*transition-timing-function: linear;*/
+        }
+        .line:nth-child(3){
+            background-color: rgb(237, 100, 196);
+            /*transition-timing-function: ease-in;*/
+        }
+        .line:nth-child(4){
+            background-color: rgb(196, 237, 100);
+           /* transition-timing-function: ease-out;*/
+        }
+        .line:nth-child(5){
+            background-color: rgb(237, 100, 100);
+            /*transition-timing-function: ease-in-out;*/
+        }
+        #all:hover .line{
+            width: 700px;
+            
+            position:relative;
+            top: 100px;
+            right:50px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</body>
+</html>

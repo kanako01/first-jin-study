@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            width: 300px;
+            height: 300px;
+            border: 5px solid #000;
+            margin: 100px;
+        }
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: rgba(0, 255, 255, 0.562);
+            text-align: center;
+            font-size: 30px;
+            color: aliceblue;
+            line-height: 300px;
+            /*transform-origin:right bottom ;
+            요소의 중심기점을 변경 속성 x,y(px,%,단어)*/
+        }
+        div:hover{
+            transition-duration: 1s;
+            /*동작이 부드럽게 시간에 의한 속성임 짱이다*/
+            transform: translate(-200px,0px);
+            /* 특정위치로 이동하는 변형 속성 px, %...(x,y) 
+            왼쪽이동은 -(마이너스)임*/
+            transform: translateX(200px);/*x축만*/
+            transform: translateY(200px);/*y축만*/
+
+            transform: scale(1.5,0.5);
+            /*사이즈 확대 혹은 축소 - 배수로 0.9~ < 1 < 1.2~  x,y*/
+            transform: scaleY(0.5);
+            transform: scaleX(3.5);
+
+            transform: rotate(-180deg);
+            /*특정한 값만큼 회전을 시킨다 - 각도(deg) 시계방향 (마이너스값)을 넣으면 반대로 돌아감*/
+            transform: rotateX(100deg);/*가로중심으로 돌아감*/
+            transform: rotatey(100deg);/*세로중심으로 돌아감*/
+
+            transform: skew(45deg,45deg);
+            /*특정한 각도로 기울이는 변형속성 사다리꼴 다각형 왜곡(deg) xy축을 다 써야함*/
+            transform: skewX(45deg);
+             transform: skewy(45deg);
+             
+             transform: rotate(180deg);
+             /*제일 최신 값만 적용된다 그래서 같이 쓰고 싶을때는 뜨ㅣ어쓰기로 작성을 한다*/
+
+             transform: translate(200px) rotate(200deg) scale(1.2,1.2);
+             background-color: pink;
+
+             transform: translateX(200px) rotate(90deg) skewX(45deg) scale(1.5,1.5);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div> transform</div>
+    </section>
+</body>
+</html>
