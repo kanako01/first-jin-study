@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #191919;
+}
+img{
+    display: block;
+}
+li{
+    list-style: none;
+}
+body{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    width: 100%;
+    height: 100px;
+    
+}
+#top{
+    width: 63.16%;
+    height: 100px;
+    margin: 10px auto;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#top{
+    font-weight: 700;
+    font-size: 1.14rem;
+}
+#top>.logo{
+    border-top: 4px solid blue;
+    border-right: 4px solid blue;
+    border-bottom: 4px solid rgb(2, 175, 2);
+    border-left: 4px solid rgb(2, 175, 2);
+    padding: 10px 15px;
+    color: blue;
+    font-size:1.14rem;
+    font-weight: 900;
+}
+#top>.btn{
+    width: 8.33%;
+    height: 30px;
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    
+}
+#top>.btn:nth-child(2n){
+    background-color: #ccc;
+}
+main{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(6, 25, 6);
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+main>h1{
+    font-size: 2.14rem;
+    font-weight: 800;
+    position: absolute;
+    top:20%;
+    left: 40%;
+    
+}
+.contents-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 71.67%;
+    height: 210px;
+    overflow: hidden;
+    position: absolute;
+    top:50%;
+    left: 15%;
+}
+.box{
+    width: 23.26%;
+    height: 210px;
+    text-align:center ;
+    background-color: #fff;
+    color: #ccc;
+    box-sizing: border-box;
+}
+.box img{
+    display: inline-block;
+    text-align: center;
+}
+.box .text>h3{
+    font-size:1rem;
+    color: #191919;
+    margin-bottom: 10px;
+}
+.box .text>p{
+    font-size: 0.71rem;
+}
+@media screen and (max-width:768px) {
+    #top>.logo{
+        display: none;
+    }
+    #top>.btn{
+        display: none;
+    }
+    #top{
+        justify-content:space-between;
+    }
+    main{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        position: none;
+    }
+   
+    .contents-box{
+        flex-flow: row wrap;
+        width: 100%;
+        left:0;
+       
+    }
+    .box{
+        width: 100%;
+        
+
+    }
+}

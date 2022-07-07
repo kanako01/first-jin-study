@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Lobster&display=swap" rel="stylesheet">
+ <style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    li {
+        list-style: none;
+    }
+    img {
+        display: block;
+    }
+    a{
+        text-decoration: none;
+    }
+    body{
+        font-family: 'Atkinson Hyperlegible', sans-serif;
+    }
+    hr{
+        margin-top: 10px;
+    }
+    #header {
+        font-family: 'Lobster', cursive;
+        width: 100%;
+        overflow: hidden;
+        background-color: antiquewhite;
+        text-align: center;
+        font-size: 20px;
+        
+    }
+    #nav{
+        width: 1600px;
+        overflow: hidden;        
+        margin:20px auto;
+       
+        text-align: center;
+    }
+    #nav ul{
+        display: inline-block;
+        overflow: hidden;
+        
+        margin: 0 auto;
+    }
+    #nav ul li{
+        float: left;
+        margin: 20px;
+        text-align: center;
+        
+    }
+    #nav ul li img{
+        width: 33px;
+        height: 42px;
+        padding-bottom: 5px;
+        margin: 0 auto;
+    }
+    #nav ul li a{
+        font-size: 20px;
+        font-weight: 600;
+    }
+   #section{
+       width: 1600px;
+       height: 633px;
+       margin: 0 auto;
+       background-color: aqua;
+   }
+   #section .left{
+       float: left;
+       width: 1274px;
+       height: 633px;
+   }
+   #section .right{
+       float: right;
+   }
+   #section .right img{
+       width: 316px;
+       height: 293px;
+       margin-left: 10px;
+   }
+   #section .right .box{
+       width: 306px;
+       height: 150px;
+       border: 5px solid #000;
+       background-image: url(box_bg.png);
+       margin: 5px;
+       font-size: 33px;
+       text-align: center;
+   }
+   .box>p{
+       margin: 5px 0;
+   }
+   #section2{
+       width: 1600px;
+       height: 1060px;
+       margin: 31px auto;
+       background-color: aquamarine;
+       box-sizing: border-box;
+   }
+   #section2 .left{
+       float: left;
+       
+   }
+   
+   #section2 .left img{
+       width: 784px;
+       height: 549px;
+       margin-bottom: 31px;
+   }
+   #section2 .right{
+       float: right;
+   }
+   #section3{
+       width: 1600px;
+       overflow: hidden;
+       margin: 0 auto;
+   }
+   #section3 img{
+       margin-bottom:31px ;
+   }
+   
+   #section4{
+       width: 1600px;
+       height: 592px;
+       margin: 0 auto;
+       margin-bottom:20px ;
+   }
+   #section4 .left{
+       float: left;
+   }
+   #section4 img{
+       width: 769px;
+       height: 592px;
+   }
+   #section4 .right{
+       float: right;
+       display:block;
+   }
+   #section4 .right .input{
+       width: 800px;
+       height: 221px;
+       background-color: goldenrod;
+       margin-top: 31px;
+       
+   }
+   #section4 .right .input .box{
+       width: 700px;
+       height: 60px;
+       color: rgb(54, 52, 52);
+       font-weight: 800;
+       font-size: 25px;
+       margin:auto;
+       
+       line-height: 221px;
+       
+   }
+    input{
+       width: 450px;
+       height: 45px;
+       border-style: none;
+       margin-left: 5px;
+   }
+   button{
+       width: 60px;
+       height: 45px;
+       border-style: none;
+       background-color: rgb(37, 37, 37);
+       color: #fff;
+       font-size: 30px;
+       
+   }
+  
+   #footer{
+        font-family: 'Lobster', cursive;
+        width: 100%;
+        overflow: hidden;
+        background-color: antiquewhite;
+        text-align: center;
+        font-size: 20px;
+   }
+  
+</style>
+</head>
+<body>
+<!--header-->
+
+<hr/>
+<div id="header">
+    <p>alfredo
+        <br/>
+    gonzales</p>
+</div>
+<div id="nav"> 
+    <ul>
+        <li><a><img src="menu01.png">Home</a></li>
+        <li><a><img src="menu02.png">Shop</a></li>
+        <li><a><img src="menu03.png">Custombox</a></li>
+        <li><a><img src="menu04.png">Blog</a></li>
+        <li><a><img src="menu05.png">Story</a></li>
+       </ul>
+</div>
+    
+<!--//header-->
+<!--section-->
+<div id="section">
+    <div class="left">
+        <img src="header01.jpg" alt="/">
+    </div>
+    <div class="right">
+        <img src="side01.jpg" alt="/">
+        <div class="box">
+            <p>DESIGN YOUR OWN SOCK</p>
+                <b>THE WORK SHOP</b>
+            
+        </div>
+        <div class="box">
+            <p>SELF SERVICE</p>
+            <b>ONLINE STORE</b>    
+        </div>          
+    </div>
+</div>
+<!--//section-->
+
+<!--section2-->
+<div id="section2">
+    <div class="left">
+        <img src="banner_01.jpg" alt="/">
+        <iframe src="https://player.vimeo.com/video/104136276" width="784px" height="480px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    <div class="right">
+        <img src="banner_02.jpg" alt="/">
+    </div>
+</div>
+<!--//section2-->
+<!--section3-->
+<div id="section3">
+    <img src="banner_03.jpg" alt="/">
+    <img src="banner_04.jpg" alt="/">
+    <img src="video.jpg" alt="/"> 
+</div>
+<!--//section3-->
+<!--section4-->
+<div id="section4">
+    <div class="left">
+        <img src="banner_05.jpg" alt="/">
+    </div>
+    <div class="right">
+        <iframe src="https://player.vimeo.com/video/58451361" width="800" height="340" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <div class="input">
+            <div class="box">
+            SIGN UP
+            <input type="text"><button>></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//section4-->
+<!--footer-->
+<div id="footer">
+    <p>alfredo
+<br/>
+     gonzales</p>
+</div>
+<!--//footer-->
+
+</body>
+</html>

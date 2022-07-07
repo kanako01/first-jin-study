@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .item{
+            width: 80px;
+            height: 80px;
+        }
+        .item1{
+            background-color: aqua;
+            
+            flex-grow: 2;
+            /*
+            부모기준으로 여분의 공간이 있을 경우 여백이 꽉차게 표현되어지는 속성
+            아이템의 증가 너비 비율을 지정해서 기본값 0;
+            */
+            /*
+            flex-basis: 20%;
+            /*증가너비에 대한 기본값을 지정 %,px,숫자 가능
+            grow의 증가 너비 비율에 상관없이 요소가 가지고 있을 기본 너비를 설정
+            (컨테이너의 넓이에 따라 사이즈 비율지정)
+            */
+            /*
+            flex-shrink: 2;
+             유연하게 줄일수 있는 값 - 기본값(1) 01이 변화없음*/
+            /* flex:1 1 50%; /*>>>>grow,basis,shrink 세개를 합친 값 */
+            /*
+            order:3;
+            /*순서지정*/
+        }
+        .item2{
+            background-color: tomato;
+            flex-grow: 1;
+        }
+        .item3{
+            background-color: pink;
+            flex-grow: 3;
+        }
+        
+        
+        .all{
+            background-color: beige;
+            height: 100vh;
+            padding: 100px;
+            display: flex;
+            
+            
+            /* 
+            flex-direction: row-reverse;
+            /*
+            row: 기본값
+            row-reverse: 오른쪽에서 왼쪽으로 축이 반대가 댐
+            column: y축 세로 위에서 아래로
+            column-reverse: 아래에서 위로
+            */
+             /*flex-wrap: wrap;
+            
+            nowrap:기본값
+            wrap:사이즈가 초과되면 알아서 다음줄로 넘어감 가변안댐(column쓰면 아래화면사이즈줄이면 세로로 정렬댐)
+            wrap-reverse:아래에서 위로 (맨아래 모양 그대로)
+            */
+            
+            flex-flow: row nowrap;
+            /*
+            합쳐진거다 row nowrap 디퐅트값
+            */
+            /*
+             justify-content: space-between;
+             
+             flex-start: 기본값
+             flex-end : 주축의 끝부분에 붙어랑(row-reverse는 1이오른쪽 끝으로/한바퀴 뒤집힘)
+             center :중앙정렬
+             space-around: 박스 간격을 넣어서 정렬하는 방법
+             space-evenly: 완전 똑같은 간격을 넣어서 정렬
+             spape-between: 끝박스는 끝에 박힘/오른쪽 왼쪽을 화면에 딱맞게 설정되고 중간의 간격이 조절
+             */
+             /*
+             align-content:space-around;
+             
+             center: 화면 정중앙에 위치
+             baseline: 가장 높이 있는 값을 베이스로 두고 위치 정렬
+             */
+             /*align-items: center;*/
+             
+        }
+    </style>
+</head>
+<body>
+    <!--
+        부모요소속성
+        -display:flex;(선언) --선언하면 주축으로 정렬댐
+        -flex-direction(item들이 배치될 방향 지정)
+        -flex-wrap(부모기준 아이템들이 어떻게 보일지를 지정)
+        -flex-flow(flex-direction + flex-wrap 단축작성)
+        -justify-content(주축방향으로 아이템들을 정렬방법지정)
+        -align-content (교차축 방향으로 아이템들의 정렬 방법지정 (여러줄일때))
+        -align-items(교차축 방향으로 아이템들의 정렬방법 지정 (한줄일때))
+
+        자식요소속성
+        -flex-grow: 아이템의 증가 너비 비율 지정
+        -flex-shrink: 아이템이 감소하는 너비의 비율지정
+        -flex-basis: 아이템의 기본 크기 지정
+        -flex: flex-grow + flex-shrink + flex-basis 단축속성
+        -order: 아이템들의 배치순서를 지정
+
+    -->
+    <div class="all">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        
+    </div>
+</body>
+</html>

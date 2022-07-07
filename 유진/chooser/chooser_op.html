@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        li{list-style: none;}
+        a{text-decoration: none;}
+        img{display: block;}
+        body{font-size: 14px;}
+        #main{
+            width: 1000px;
+            overflow: hidden;
+            margin: auto;
+            background-color: antiquewhite;
+            margin-top: 100px;
+        }
+        #main>.left{
+            width: 750px;
+            height: 500px;
+            background-image: url("0320-1.jpg");
+            float: left;
+        }
+        #main .left .text{
+            width: 250px;
+            height: 250px;
+            background-color: blanchedalmond;
+            margin-top: 250px;
+            padding:30px;
+            box-sizing: border-box;
+        }
+        #main .text h2{
+            margin-bottom: 15px;
+        }
+        #main .right{
+            float: right;
+        }
+        #section{
+            width: 1000px;
+            overflow: hidden;
+            margin: auto;
+            background-color: burlywood;
+        }
+        #section .left{
+            width: 750px;
+            float: left;
+            overflow: hidden;
+        }
+        #section .right{
+            width: 250px;
+            height: 500px;
+            float: right;
+            background-color: aqua;
+            text-align: center;
+        }
+        #section .left .b1{
+            width: 250px;
+            height: 250px;
+            float: left;
+            background-color: cadetblue;
+            text-align: center;
+            
+        }
+        #section .left .b1:nth-child(2n){
+            background-color: darksalmon;
+        }
+        #footer{
+            width: 1000px;
+            height: 40px;
+            margin: auto;
+            background-color: darkkhaki;
+            margin-bottom: 100px;
+        }
+        #footer ul{
+            width: 750px;
+            line-height: 40px;
+            float: left;
+            background-color: darkgray;
+        }
+        #footer ul li{
+            float: left;
+            margin: 5px;
+            font-size: 12px;
+            color: #fff;
+        }
+        #footer ul li:first-of-type{
+            margin-left: 20px;
+        }
+        #footer ul li a{
+            color: #fff;
+        }
+        #footer .right{
+            width: 250px;
+            height: 50px;
+            line-height: 50px;
+            float: right;
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!--main-->
+    <div id="main">
+        <div class="left">
+            <div  class="text">
+                <h2>GLOBAL<br/>BUSINESS</h2>
+                    <P>
+                        GLOBAL No.1 lifestyle,<br/>
+                        Media Shopping Leader<br/>
+                        라이프스타일을 선도하는 <br/>
+                        세계최고의 미디어 쇼핑리더
+                    </P>
+            </div>
+        </div>
+        <div class="right">
+            <img src="0320-2.jpg" alt="/">
+            <img src="0320-3.jpg" alt="/">
+        </div>
+    </div>
+    <!--//main-->
+
+
+    <!--box-->
+    <div id="section">
+        <div class="left">
+            <div class="b1">1</div>
+            <div class="b1">2</div>
+            <div class="b1">3</div>
+            <div class="b1">4</div>
+            <div class="b1">5</div>
+            <div class="b1">6</div>
+        </div>
+        <div class="right">7</div>
+    </div>
+    <!--//box-->
+
+
+    <!--footer-->
+    <div id="footer">
+        <div class="left">
+            <ul>
+                <li><a href="#">법적고지</a></li>
+                <li>|</li>
+                <li><a href="#">이메일무단수집거부</a></li>
+                <li>|</li>
+                <li><a href="#">이용약관</a></li>
+                <li>|</li>
+                <li><a href="#">개인정보취급방침</a></li>
+                <li>|</li>
+                <li><a href="#">고객센터</a></li>
+                <li>|</li>
+                <li><a href="#">입찰공고</a></li>
+            </ul>
+        </div>
+        <div class="right">cj그룹계열사 바로가기</div>
+    </div>
+    <!--//footer-->
+</body>
+</html>

@@ -1,0 +1,111 @@
+/*font-family: 'Atkinson Hyperlegible', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    font-size: 14px;
+}
+table{
+    border-collapse: collapse;
+}
+td,th{
+border:1px solid #ccc;
+}
+#top{
+    width: 1000px;
+    height: 50px;
+    margin:0 auto;
+    line-height: 50px;
+}
+#top>h3{
+    float: left;
+    font-weight: 700;
+}
+#top>p{
+    float: right;
+    color: #ccc;
+}
+#section1{
+    width: 1000px;
+     overflow: hidden;
+    margin:auto;
+    padding: 40px 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.left{
+    width: 400px;
+    float: left;
+    margin-left: 20px;
+    text-align: center;
+    margin: auto;
+}
+.left td{
+    border: none;
+}
+.left span{
+    float: left;
+    font-size: 20px;
+    color:rgb(18, 124, 194);
+}
+.right{
+    width: 500px;
+    float: right;
+    text-align: center;
+
+}
+.right th{
+    height: 40px;
+    background-color: rgb(228, 225, 225);
+}
+.right td{
+    height: 40px;
+    line-height: 30px;
+}
+.non-l{
+    border-left: none;
+}
+.non-r{
+    border-right: none;
+}
+.section2{
+    width: 1000px;
+    height: 70px;
+    margin:50px auto;
+    margin-top:100px ;
+}
+
+.section2 h2{
+    color: rgb(148, 145, 145);
+}
+.section3{
+    width: 1000px;
+    overflow: hidden;
+    margin: 20px auto;
+    border-top:4px solid rgb(192, 190, 190) ;
+}
+.section3 th{
+    height: 40px;
+    border:none ;
+}
+.section3 tr{
+    height: 40px;
+    text-align: center;
+    border: 1px solid rgb(241, 238, 238);
+    border-left: none;
+    border-right: none;
+}
+.section3 td{
+    border: none;
+    color: rgb(129, 127, 127);
+    font-weight: 800;
+}
+.section3 button{
+    width: 50px;
+    height: 25px;
+    border: none;
+    background-color: rgb(134, 206, 182);
+    color: #fff;
+}

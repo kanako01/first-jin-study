@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: all 0.8s;
+}
+a{text-decoration: none;}
+li{list-style: none;}
+img{
+    display: block;
+    max-width: 100%;
+}
+body{font-size: 14px;}
+header{
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+header ul{
+    display: inline-block;
+    overflow: hidden;
+}
+header  ul li{
+    float: left;
+    line-height: 100px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 600;
+}
+header li a {
+    color: #191919;
+}
+header li:nth-child(1){
+    height: 40px;
+    padding: 0 20px;
+    border-top: 4px solid green;
+    border-right: 4px solid green;
+    border-bottom: 4px solid blue;
+    border-left: 4px solid blue;
+    line-height: 40px;
+    margin: 26px 0;
+    font-weight: 900;
+}
+header li:nth-child(2){
+    margin-left: 100px;
+}
+header li:nth-child(7){
+    height: 30px;
+    line-height: 30px;
+    padding: 0 30px;
+    margin: 35px 0;
+    margin-right: 40px;
+    background-color: cadetblue;
+}
+header li:nth-child(7)a{
+    font-size: 14px;
+    color: #fff;
+}
+header li:nth-child(8){
+    height: 30px;
+    line-height: 30px;
+    padding: 0 30px;
+    margin: 35px 0;
+    background-color:#ccc;
+}
+header li:nth-child(8)a{
+    font-size: 14px;
+    color: #fff;
+}
+section{
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(18, 32, 18);
+    color: #fff;
+    padding-bottom: 60px;
+}
+section>h1{
+    margin: 60px auto;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+}
+
+#contents_box{
+    margin: auto;
+    width: 1020px;
+    overflow: hidden;
+}
+.box{
+    float: left;
+    width: 200px;
+    height: 210px;
+    margin-right:20px ;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    color: #191919;
+}
+.box:last-child{
+    margin-right: 0;
+}
+.box img{
+    margin: auto;
+}
+@media screen and (max-width:768px) {
+    body{
+        min-width: 768px; 
+        /*768이하로 줄이더라도 스크롤바가 나타나면서 유지*/
+    }
+
+    header li:nth-child(1),
+    header li:nth-child(7),
+    header li:nth-child(8){
+        display: none;
+    }
+    header li:nth-child(2){
+        margin-left: 0;
+    }
+    header li{
+        padding: 0 20px;
+    }
+
+    #contents_box{
+        width: 100%;
+    }
+    .box{
+        width: 100%;
+        padding: 20px 0;
+        margin-right: 0;
+    }
+    .box:nth-child(2n){
+        background-color: pink;
+    }
+    .box h4{
+        margin-bottom: 10px;
+    }
+    }
+
+

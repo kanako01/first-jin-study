@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--화면사이즈(화면에 보이는 영역을 기기 기준으로 구분 나타냄)-->
+    <title>미디어쿼리</title>
+    <style>
+        /*
+        .text{
+            max-width: 1000px;
+             최대 유지하고자 하는 넓이 값 ,(1000px 이상은 커지지마) 
+             min-width: 1000px;
+             최소 유지하고자 하는 넓이 값 100% ~ ,(암만 작아져도 1000px은 유지해라)
+            height: 100px;
+            background-color: bisque;
+            font-size: 20px;
+        }
+        */
+        /*@media screen
+        
+        미디어쿼리 = (조건=)기준점을 기반으로 스타일을 부여하는 반응형 css 구문법
+        >> 화면사이즈 별로 화면에 맞는 디자인을 구성해서 표현하는 반응형 스타일 표현방법
+
+        @media screen and (화면사이즈 조건){
+            .text{}
+        }
+        */
+        @media screen and (min-width:1024px){
+            /*내가 보고 있는 화면사이즈 1024px이상 화면기준 !*/
+            body{
+                background-color: aqua;
+            }
+        }
+
+        @media screen and (max-width:1023px){
+            /*내가 보고 있는 화면사이즈 1023px 이하 화면기준 !*/
+            body{
+                background-color: tomato;
+            }
+        }
+        /* 영역 */
+
+        @media screen and (min-width:510px) and (max-width:700px){
+            body{
+                background-color: forestgreen;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="text">
+        반응형 웹디자인: 다양한 디바이스 기기이 보급으로 하나의 웹페이지로 각 기기별로 호환이
+        가능한 반응형 웹 디자인 >>일반화
+        *미디어쿼리<br/>
+        뷰포트에 따라서 css의 구분을 지어 나타내는 쿼리문
+    </div>
+</body>
+</html>

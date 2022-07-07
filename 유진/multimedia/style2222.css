@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Lobster&display=swap');
+/*
+font-family: 'Atkinson Hyperlegible', sans-serif;
+font-family: 'Lobster', cursive;
+*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-size: 14px;
+}
+img{
+    display: block;
+}
+
+.logo{
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+#header{
+    width: 1600px;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+#header ul{
+    display: inline-block;
+}
+#header ul li{
+    float: left;
+    padding: 0 30px;
+}
+#header li a {
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+}
+#header li img{
+    margin: auto;
+}
+/*main*/
+
+#main{
+    width: 1600px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 30px;
+}
+#main .left{
+    float: left;
+    width: 1274px;
+    overflow: hidden;
+}
+#main .right{
+    width: 316px;
+    overflow: hidden;
+    float: right;
+}
+#main .text{
+    width: 316px;
+    height: 160px;
+    background-image: url(box_bg.png);
+    border: 7px solid #333;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+#main .text p{
+    font-size: 18px;
+    margin-top: 20px;
+}
+#main .text h3{
+    font-size: 30px;
+    margin: 15px 0s;
+}
+#main .text span{
+    display: inline-block;
+    width: 50px;
+    height: 3px;
+    background-color: #333;
+}
+
+/*section 1*/
+
+#section1{
+    width: 1600px;
+    overflow:hidden;
+    margin: auto;
+    margin-top: 30px;
+}
+#section1 .left{
+    float: left;
+    width: 784px;
+    height: 1060px;
+    overflow: hidden;
+}
+#section1 .right {
+    width: 785px;
+    overflow: hidden;
+    float: right;
+}
+#section1 .ibox{
+    width: 784px;
+    height: 481px;
+    background-color: black;
+    margin-top: 30px;
+}
+
+/*section2*/
+
+#section2{
+    width: 1600px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 30px;
+}
+#section2 img{
+    margin-bottom: 30px;
+}
+#footer{
+    width: 1600px;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 30px;
+}
+#footer .left{    
+    width: 790px;
+    height: 500px;
+    background-image: url(banner_05.jpg);
+    float: left;
+    background-size:790px 500px;
+    /* 비율로들어간다 cover 그래서 잘릴수 있음*/
+}
+#footer .right{
+    width: 800px;
+    overflow: hidden;
+    float: right;
+}
+#footer .ibox{
+    width: 800px;
+    height: 340px;
+    background-color: #000;
+    overflow: hidden;
+}
+#footer .inputbox{
+    width: 800px;
+    height: 150px;
+    margin-top: 10px;
+    background-color: goldenrod;
+    overflow: hidden;
+    text-align: center;
+}
+#footer form{
+    display: inline-block;
+    height: 40px;
+    margin: 55px 0;
+}
+#footer form label{
+    display: block;
+    float: left;
+    line-height: 40px;
+    font-weight: 900;
+    font-size: 20px;
+    color: #333;
+}
+#footer form input[type="text"]{
+    display: block;
+    float: left;
+    border: none;
+    width: 250px;
+    height: 40px;
+    margin-left: 15px;
+    padding-left: 20px;
+}
+/* 인풋안에 텍스트를 속성을 줌 속성을 줄때는 꺽쇠괄호*/
+#footer form button{
+    display: block;
+    float: left;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+}
+.flogo{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    overflow: hidden;
+    margin-bottom: 50px;
+   }

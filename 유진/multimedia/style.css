@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Lobster&display=swap');
+/*
+font-family: 'Atkinson Hyperlegible', sans-serif;
+font-family: 'Lobster', cursive;
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+li{
+    list-style:none;
+}
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-size: 14px;
+}
+#logo{
+    overflow: hidden;
+    font-family:'Lobster',cursive;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+#header{
+    width: 1600px;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+#header ul{
+    display: inline-block;
+}
+#header ul li{
+    float: left;
+    padding: 0 30px;
+}
+#header li a{
+   font-size: 16px;
+   font-weight: 700;
+   color: #333;
+}
+#header li img{
+    margin: auto;
+}
+/*main*/
+#main{
+    width: 1600px;
+    height: 633px;
+    margin: 30px auto;
+    
+}
+#main .left{
+    width: 1274px;
+    height: 633px;
+    float: left;
+}
+#main .right{
+    float: right;
+    margin-left: 10px;
+}
+#main .right .box{
+    width:316px;
+    height: 160px;
+    border: 7px solid #333;
+    background-image: url(box_bg.png);
+    margin-top: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+#main .box p{
+    font-size: 25px;
+    margin-top: 10px;
+}
+#main .box h3{
+    font-size: 25px;
+    margin: 15px 0;
+}
+#main .box span{
+    display: inline-block;
+    width: 40px;
+    height: 3px;
+    background-color: #333;
+}
+
+/*section1*/
+
+#section1{
+    width: 1600px;
+    height: 1060px;
+    margin: 0 auto;
+}
+#section1 .left{
+    width: 784px;
+    height: 1060px;
+    float: left;
+    overflow: hidden;
+}
+#section1 .left .ibox{
+    width: 784px;
+    height: 481px;
+    margin-top: 30px;
+    background-color: #000;
+}
+#section1 .right{
+    width: 785px;
+    overflow: hidden;
+    float: right;
+
+}
+
+/*section2*/
+#section2{
+    width: 1600px;
+    margin:0 auto;
+    overflow: hidden;
+}
+#section2 img{
+    margin-top: 30px;
+}
+
+/*footer*/
+#footer{
+    width: 1600px;
+    overflow: hidden;
+    margin: 30px auto;
+}
+#footer .left{
+    width: 790px;
+    height: 500px;
+    overflow: hidden;
+    float: left;
+    background-image: url(banner_05.jpg);
+    background-size: 790px 500px;
+}
+#footer .right{
+    width: 800px;
+    overflow: hidden;
+    float: right;
+    margin-left: 10px;
+}
+#footer .right .ibox{
+    width: 800px;
+    height: 340px;
+    background-color: #000;
+}
+#footer .inputbox{
+    width: 800px;
+    height: 150px;
+    background-color: darkorange;
+    margin-top: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+#footer form{
+    display: inline-block;
+    height: 40px;
+    margin: 55px 0;
+    
+}
+#footer form label{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    float: left;
+    line-height: 40px;
+    display: block;
+}
+#footer form input[type="text"]{
+    display: block;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 20px;
+    margin-left: 15px;
+    float: left;
+}
+#footer form button{
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 30px;
+    text-align: center;
+    float: left;
+    display: block;
+}
+.flogo{
+    overflow: hidden;
+    font-family:'Lobster',cursive;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}

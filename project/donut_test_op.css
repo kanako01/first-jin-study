@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+/* font-family: 'Lilita One', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+ */
+
+ *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #191919;
+}
+li{
+    list-style: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+body{
+    font-size: 18px;
+    color: #191919;
+}
+h1{
+    font-family: 'Lilita One', cursive;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+header>a{
+    float: left;
+    display: block;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 10vh;
+    padding: 0 40px;
+}
+header ul{
+    float: right;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+}
+header li{
+    padding: 0 30px;
+    font-weight: 700;
+}
+main{
+    width: 100%;
+    height: 80vh;
+    background-image: url(img/mainbg.png);
+    background-size: cover;
+    
+    color: rgb(44, 174, 250);
+    font-size: 20px;
+}
+main>.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+main>.title h1{
+    font-size: 80px;
+    margin-bottom: 30px;
+    line-height: 90px;
+}
+
+#flex{
+    width: 100%;
+    overflow: hidden;
+    padding: 15vh 0;
+    text-align: center;
+    font-size: 14px;
+}
+#flex h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#flex article{
+    width: 63%;
+    margin: 50px auto;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+#flex article .item{
+    flex: 1 1 20%;
+    margin: 10px;
+    background-color: pink;
+    border-radius: 50%;
+    padding: 10px;
+}
+#float{
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+#float article:nth-child(1){
+    width: 50%;
+    height: 100vh;
+    background-image: url(img/gridleftBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    font-size: 80px;
+    float: left;
+}
+#float article:nth-child(1) p{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+#float article:nth-child(1) li{
+    list-style: circle;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#float article:nth-child(2){
+    width: 50%;
+    height: 80vh;
+    float: right;
+}
+#float .item-bg1{
+    background-image: url(img/gridrightBg_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    height: 40vh;
+    color: #fff;
+    width: 100%;
+    font-size: 40px;
+}
+#float .item-bg1 button{
+    width: 30%;
+    padding: 15px 0;
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: rgba(255, 255, 255, 0.014);
+}
+#float .item-bg2{
+    background-image: url(img/gridrightBg_2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    height: 40vh;
+    color: rgb(236, 96, 182);
+    width: 100%;
+    position: relative;
+}
+#float .item-bg2>div{
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#float .item-bg2 a{
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 800;
+    color:rgb(236, 96, 182) ;
+}
+#float .item-bg2 i{
+    display: block;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+footer{
+    width: 100%;
+    padding: 6vh 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    font-size: 14px;
+}
+@media  screen and (max-width:1024px) {
+    header{
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.493);
+    }
+    header>a{
+        float: none;
+        text-align: center;
+        font-size: 30px;
+    }
+    header>ul{
+        float: none;
+        height: auto;
+        padding: 3vh 0;
+        justify-content: center;
+    }
+    main{
+        height: 100vh;
+    }
+    #flex article{
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    #flex article .item{
+        flex: 1 1 30%;
+    }
+    #float{
+        height: 100vh;
+    }
+    #float article:nth-child(1){
+        width: 100%;
+        height: 60vh;
+        clear: both;
+    }
+    #float article:nth-child(2){
+        width: 100%;
+        height: 30vh;
+        clear: both;
+    }
+    #float .item-bg1{
+        width: 50%;
+        float: left;
+    }
+    #float .item-bg2{
+        width: 50%;
+        float: right;
+    }
+    #float .item-bg1,
+    #float .item-bg2{
+        font-size: 27px;
+        font-weight: 500;
+    }
+    #float .item-bg1 button{
+        width: 60%;
+
+    }
+}

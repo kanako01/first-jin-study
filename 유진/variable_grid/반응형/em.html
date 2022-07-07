@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: 15px;
+            transition: all 0.5s;
+            margin: 0;
+            padding: 0;
+        }
+        #text{
+            font-size: 15px;
+        }
+        .em{
+            font-size: 2em;
+        }
+        .rem{
+            font-size: 2rem; /*body기준 16px*/
+            margin: 1rem;
+        }
+        @media  screen and (max-width:1024px) {
+            *{
+                font-size: 12px;
+            }
+            
+        }
+        #wrap{
+            width: 500px;
+            height: 500px;
+            border: 2px solid #000;
+        }
+        .box{
+            width: 90vw; 
+            /* 화면기준 x % , 부모한테 영향받는거 아님
+             부모가 작아도 vh,vw는 %처럼 줄지 않고 넘침 ㅅㄱㄹ*/
+            height: 90vh;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!--<div id="text">
+        <p class="em">
+            em:반응형 단위중의 하나로 폰트에 많이 사용<br/>
+            (여백값에 사용되기도 함)
+            기준값의 배수로 표현되어지는 단위(=부모기준)
+        </p>
+        <p class="rem">
+            rem:반응형 단위중 하나로 폰트에 많이 사용<br/>
+            기준값의 배수로 표현되어지는 단위(최상단기준=*)
+        </p>
+    </div>-->
+    <div id="wrap">
+            <div class="box"></div>
+    </div>
+</body>
+</html>

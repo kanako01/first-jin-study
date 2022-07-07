@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+@font-face{
+    font-family: "tvn";
+    src: url(font/tvN즐거운이야기Medium.ttf) format('truetype');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    display: block;
+}
+body{
+    font-size: 14px;
+    background-image: url(bg_body_tvnfontguide.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#header{
+    width: 100%;
+    overflow: hidden;
+}
+#header img{
+    width: 100%;
+}
+#nav{
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    overflow: hidden;
+    text-align: center;
+    /* 글자 중앙정렬-ul을 글자 취급해서 적용 */
+}
+#nav ul{
+    display: inline-block;
+    /* 원래는 block임 그래서 폭이 존재해야 margin
+    값이 auto값이 적용됨> 폭을 알수없음!
+    dispaly:inline-block 글자인것 처럼 속여서 배치
+    늘어나는 콘텐츠에 상관없이 중앙배치 
+    부모에 글자 중앙 정렬 */
+    overflow: hidden;
+}
+#nav li{
+    float: left;
+    padding: 0 40px;
+    line-height: 97px;
+}
+
+#nav li:hover{
+    border-bottom: 3px solid #fff;
+}
+#nav li a{
+    color: #fff;
+    font-weight: 700;
+}
+
+#section{
+    width: 870px;
+    overflow: hidden;
+    margin: 80px auto;
+}
+#section .title{
+    width: 100%;
+    height: 267px;
+    overflow: hidden;
+}
+#section .title>p{
+    float: left;
+    font-family: "tvn";
+    font-size: 140px;
+    font-weight: 900;
+    color: navy;
+    line-height: 267px;
+}
+#section .title>img{
+    float: right;
+}
+#section>img{
+    margin: 20px auto;
+}
+#section .text{
+    text-align: center;
+    padding: 30px 0;
+    color: navy;
+}
+#section .text>h3{
+    font-family: "tvn";
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.btn{
+    width: 500px;
+    overflow: hidden;
+    text-align: center;
+    margin: 30px auto;
+}
+.btn button{
+    display: inline-block;
+    width: 210px;
+    height: 80px;
+    border: 3px solid navy;
+    background-color: rgba(255, 255, 255, 0);
+    color: navy;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 10px;
+}
+.btn button:hover{
+    background-color: navy;
+    color: #fff;
+}
+
+#section2{
+    width: 100%;
+    overflow: hidden;
+    padding: 70px 0;
+    background-color: orange;
+}
+#section2 .font{
+    width: 870px;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 50px;
+}
+#section2 .font:last-child{
+    margin-bottom: 0;
+}
+
+.font>p{
+    float: left;
+    width: 80px;
+    border-right: 1px solid #f00;
+    line-height: 20px;
+    margin-right: 30px;
+    color: #f00;
+    font-weight: 300;
+}
+.font>img{
+    float: left;
+}
+#section3{
+    width: 870px;
+    overflow: hidden;
+    margin: 60px auto;
+}
+#section3>p{
+    line-height: 30px;
+    color: navy;
+}
+#section3>p:nth-child(2){
+    margin-top: 50px;
+}
+
+#footer{
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    overflow: hidden;
+}
+#footer .inner{
+    width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+.inner>a{
+    display: block;
+    width: 76px;
+    height: 21px;
+    float: left;
+    margin: 14.5px;
+}
+.inner>ul{
+    float: left;
+    overflow: hidden;
+    margin-left: 20px;
+}
+.inner li{
+    float: left;
+    line-height: 15px;
+    margin: 17.5px 0;
+    padding: 0 20px;
+    border-right: 1px solid #fff;
+}
+.inner li a{
+    color: #fff;
+}
+.inner li:last-child{
+    border-right: 0;
+}

@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    display: block;
+}
+body{
+    background-color: rgb(248, 247, 247);
+    font-size: 14px;
+}
+#top{
+    width: 768px;
+    overflow: hidden;
+    margin: 30px auto;
+}
+#top select{
+    display: block;
+    width: 100px;
+    padding: 5px 6px;
+}
+#top>a{
+    display: block;
+    width: 226px;
+    height: 42px;
+    margin:30px auto;
+    
+}
+#section{
+    width: 460px;
+    overflow: hidden;
+    margin: auto;
+}
+#section form{
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+#section input[type="checkbox"]{
+    display: block;
+    float: left;
+    margin: 6px;
+}
+#section form p{
+    float: left;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 25px;
+    padding-left: 5px;
+}
+#section form span{
+    color: #00c750;
+}
+#section form button{
+    display: block;
+    float: right;
+    padding: 3px 7px;
+    color: #00c750;
+    border: 1px solid #00c750;
+    background-color: #fff;
+}
+.contents{
+    width: 100%;
+    height: 88px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 13px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    line-height: 17px;
+}
+.btn{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.btn button:nth-child(1){
+    width: 225px;
+    height: 50px;
+    border: none;
+    display: block;
+    float: left;
+    background-color: #808080;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+}
+.btn button:nth-child(2){
+    width: 225px;
+    height: 50px;
+    border: none;
+    display: block;
+    float: right;
+    background-color: #00c750;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+}
+.link{
+    overflow: hidden;
+    margin: 10px 0;
+    text-align: center;
+    color: #808080;
+    font-size: 13px;
+}
+.link p>a{
+    text-decoration: underline;
+    color: #000;
+}
+.link ul{
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px 0;
+}
+.link li{
+    float: left;
+    padding: 0 5px;
+    line-height: 13px;
+    border-right: 1px solid #ccc;
+}
+.link li:last-child{
+    border:none;
+}
+.link li a{
+    color: #808080;
+}

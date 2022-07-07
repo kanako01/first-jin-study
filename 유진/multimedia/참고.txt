@@ -1,0 +1,36 @@
+������ �������� 
+-  ��ü �̹���������Ȯ�� �� �ڵ� ����  
+-  �������� ������ ������ �� �� �����Ƿ� ���̾ƿ��� ��ġ   
+-  box_bg.png�� ����̹����� Ȱ��  
+-  �ϴ� ��Ȳ���ڽ� > input �ʼ� �ֱ� !  (��/��ǲ/��ư) ����  
+
+alfredo
+<br/>
+gonzales
+
+구글폰트
+atkinson
+
+logofont :lobster
+  <ul>
+    <li><a><img src="menu01.png">Home</a></li>
+    <li><a><img src="menu02.png">Shop</a></li>
+    <li><a><img src="menu03.png">Custombox</a></li>
+    <li><a><img src="menu04.png">Blog</a></li>
+    <li><a><img src="menu05.png">Story</a></li>
+   </ul>
+
+      <ul>
+       <li><img src="menu01.png" alt="/"></li>
+       <li><img src="menu02.png" alt="/"></li>
+       <li><img src="menu03.png" alt="/"></li>
+       <li><img src="menu04.png" alt="/"></li>
+       <li><img src="menu05.png" alt="/"></li>
+   </ul>
+   <ul>
+    <li><a>Home</a>a></li>
+    <li><a>Shop</a></li>
+    <li><a>Custombox</a></li>
+    <li><a>Blog</a></li>
+    <li><a>Story</a></li>
+   </ul>

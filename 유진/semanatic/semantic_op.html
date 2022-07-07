@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        li{
+            list-style: none;
+
+        }
+        header{
+            width: 1000px;
+            height: 100px;
+            margin: 10px auto;
+            border: 2px solid #000;
+            overflow: hidden;
+        }
+        header h1{
+            width: 200px;
+            height: 100px;
+            background-color: #ff0;
+            line-height: 100px;
+            text-align: center;
+            float: left;
+        }
+        nav{
+            float: right;
+            overflow: hidden;
+
+        }
+        nav>ul{
+            height: 30px;
+            line-height: 30px;
+            background-color: #ff0;
+        }
+        nav>ul li{
+            height: 30px;
+            float: left;
+            padding-left: 20px;
+        }
+        nav>ul:nth-child(2){
+            background-color: orange;
+            margin-top: 40px;
+        }
+        main{
+            width: 1000px;
+            overflow: hidden;
+            margin: auto;
+            background-color: bisque;
+        }
+        section{
+            width: 700px;
+            overflow: hidden;
+            float: left;
+        }
+        article{
+            width: 700px;
+            padding: 20px;
+            border: 2px solid #000;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        aside{
+            width: 250px;
+            border: 2px solid #000;
+            padding: 20px;
+            overflow: hidden;
+            float: right;
+        }
+        aside input[type="text"]{
+            display:block;
+            margin-bottom: 5px;
+
+        }
+        aside button{
+            display: block;
+        }
+        .banner{
+            background-color: darkgray;
+            margin-top: 15px;
+        }
+        .banner span{
+            display: block;
+            font-size: 14px;
+        }
+        footer{
+            width: 1000px;
+            height: 100px;
+            margin: auto;
+            border: 2px solid #000;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <h1>WEB-logo</h1>
+        <nav>
+            <ul>
+                <li>menu-1</li>
+                <li>menu-1</li>
+                <li>menu-1</li>
+                <li>menu-1</li>
+            </ul>
+            <ul>
+                <li>menu-2</li>
+                <li>menu-2</li>
+                <li>menu-2</li>
+                <li>menu-2</li>
+            </ul>
+        </nav>
+    </header>
+    <!--//header-->
+
+    <!--main-->
+    <main>
+    <!--section-->
+    <section>
+        <article>
+            <h2>Main Article</h2>
+            <p>ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced. ColorZilla includes a Color Picker, Eye Dropper, Gradient Generator and many additional advanced color tools.</p>
+        </article>
+        <article>
+            <h2>Main Article</h2>
+            <p>ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced. ColorZilla includes a Color Picker, Eye Dropper, Gradient Generator and many additional advanced color tools.</p>
+        </article>
+        <article>
+            <h2>Main Article</h2>
+            <p>ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced. ColorZilla includes a Color Picker, Eye Dropper, Gradient Generator and many additional advanced color tools.</p>
+        </article>
+    </section>
+    <!--//section-->
+    <!--aside-->
+    <aside>
+    <h2>right aside</h2>
+    <p>ColorZilla for Google Chrome is an extension that assists web developers and graphic designers with color related tasks - both basic and advanced.</p>
+    <input type="text">
+    <button type="button">mailto</button>
+    <div class="banner">
+        <h2>Text</h2>
+        <span>banner</span>
+    </div>
+    </aside>
+    <!--//aside-->
+    </main>
+    <!--//main-->
+
+    <!--footer-->
+    <footer>
+    <h2>html5</h2>
+    <p>divcss.cafe24.com</p>
+    </footer>
+    <!--//footer-->
+</body>
+</html>

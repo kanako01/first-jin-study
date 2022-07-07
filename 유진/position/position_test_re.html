@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        a{
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+        #header{
+            width: 100%;
+            height: 100px;
+            background-color: indigo;
+            overflow: hidden;
+            position: relative;
+            /*부모기준*/
+            
+        }
+       
+        
+        #header>h1{
+            width: 200px;
+            height: 100px;
+            font-family: 'Oswald', sans-serif;
+            color: yellow;
+            font-size: 40px ;
+            position:relative;
+            text-align: center;
+            line-height: 100px;
+            position: absolute;
+            top: 0;
+            left: 100px; 
+        }
+        #header>ul{
+            position: absolute;
+            top: 0;
+            right:100px ;
+        }
+        #header>ul li{
+            float: left;
+            line-height: 100px;
+            margin-left: 40px ;
+            font-weight: 700;
+        }
+       
+        #header>ul li a{
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        #header>ul li a:hover{
+            color: red;
+        }
+        #main{
+            width: 100%;
+            height: 581px;
+            background-image: url("main.png");
+            background-size: cover;
+            overflow: hidden;
+            position: relative;
+            /*부모기준*/
+        }
+        .title{
+            width: 500px;
+            height: 130px;
+            background-color: #000;
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            padding-top: 20px;
+            box-sizing: border-box;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left:-250px ;
+            margin-top: -65px;
+            /*자신의 박스 기준 줄어드는 것*/
+        }
+        #section{
+            width: 500px;
+            overflow: hidden;
+            text-align: center;
+            margin: 50px auto;
+            /*position:relative;
+            left:50%;
+            margin-left:-250px;*/
+        }
+        #section p{
+            font-size: 14px;
+            margin-top: 15px;
+            color: #808080;
+        }
+       
+        .box{
+            width: 500px;
+            height: 400px;
+            background-color: #000;
+            margin: 20px auto;
+            /*
+            position:relative;
+            left:50%;
+            margin-left:-250px;
+            margin-bottom:100px;
+            */
+        }
+        .box button{
+            display: block;
+            width: 100px;
+            height: 100px;
+            color: #fff;
+            background-color: #ccc;
+            font-size: 30px;
+            border: none;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            margin-top: -50px;
+           
+        }
+        #section .box button:nth-child(1){
+            left: 0;
+        }
+        #section .box button:nth-child(2){
+            right: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>TC-logo</h1>
+        
+            <ul>
+                <li><a href="#">WELCOME</a></li>
+                <li><a href="#">FEATURED WORK</a></li>
+                <li><a href="#">EXPERIENCE</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">PRESS&ARTICLES</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        
+    </div>
+    <div id="main">
+        <div class="title">
+            DRIVEN BY TRUTH, WE CREATE REMARKABLE, PRODUCTIVE BRAND OPPORTUNITY
+            FOR CLIENTS WHO KNOW THAT BUILDING BRANDS BUILDS BUSINESS. 
+        </div>
+    </div>
+    <div id="section">
+        <h1>TRUTH:</h1>
+        <p>
+            DRIVEN BY TRUTH, WE CREATE REMARKABLE, PRODUCTIVE BRAND OPPORTUNITY<br/>
+ FOR CLIENTS WHO KNOW THAT BUILDING BRANDS BUILDS BUSINESS. 
+        </p>
+        <div class="box">
+            <button type="button">◁</button>
+            <button type="button">▷</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: cadetblue;
+}
+#top{
+    width: 73.68%;
+    height: 100px;
+    margin: auto;
+    background-color: blueviolet;
+}
+#top .logo{
+    float: left;
+    width: 17.86%;
+    height: 40px;
+    background-color: blue;
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    margin: 30px;
+    text-align: center;
+    padding: 0 30px;
+    font-size: 1.16vw;
+   
+}
+#top .logo span{
+    color: yellow;
+}
+.menu{
+    width: 62.14%;
+    height: 40px;
+    float: right;
+    background-color: firebrick;
+    margin: 30px;
+    box-sizing: border-box;
+}
+.menu ul{
+    display: inline-block;
+
+}
+.menu ul li{
+    float: left;
+    width:150px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 10%;
+    text-align: center;
+    margin-right:30px;
+    line-height: 40px;
+    font-size:0.84vw;
+    box-sizing: border-box;
+}
+.menu ul li:last-child{
+    margin:0;
+}
+.menu ul li a{
+    color: #fff;
+    text-decoration: underline;
+    font-size:0.84vw;
+}
+#main{
+    width: 100%;
+    padding:10px 0% ;
+    background-image:url(img/pixabay_main.jpg) ;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+}
+#main .text {
+    padding: 50px;
+    height: 700px;
+    line-height: 100px;
+    
+}
+#main button{
+    width: 10.52%;
+    height: 40px;
+    background-color: #dac50b;
+    color:#191919;
+    border: none;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 800;
+}
+#section{
+    width: 69.63%;
+    overflow: hidden;
+    background-color:#fff200;
+    margin: auto;
+}
+#section .fl{
+    width: 100%;
+    overflow: hidden;
+    color: rgb(6, 141, 96);
+    font-weight: 800;
+    text-align: center;
+    background-color: #ccc;
+    font-size: 1.37vw;
+    margin-top: 30px;
+}
+#section .sl{
+    width: 37.79%;
+    overflow: hidden;
+    background-color: #ccc;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 0.84vw;
+}
+#section .full{
+    width: 100%;
+    overflow: hidden;
+}
+#section .box{
+    width: 25%;
+    overflow: hidden;
+    background-color: rgb(198, 197, 211);
+    padding: 40px;
+    text-align: center;
+    float: left;
+    border-right: 1px solid rgb(185, 181, 181);
+    box-sizing: border-box;
+}
+#section .box:last-child{
+    border: none;
+}
+#footer{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    background-color: rgb(224, 223, 223);
+}

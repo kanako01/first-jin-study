@@ -1,0 +1,110 @@
+/*font-family: 'Atkinson Hyperlegible', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 14px;
+}
+table{
+    border-collapse:collapse ;
+}
+td,th{
+    border: 1px solid #ccc;
+}
+#top{
+    width: 1000px;
+    height: 50px;
+    line-height: 50px;
+    margin: auto;
+    margin-top: 20px;
+}
+#top>h3{
+    float: left;
+}
+#top>p{
+    float: right;
+    color: #ccc;
+}
+#num{
+    width: 1000px;
+    padding: 40px 0;
+    overflow: hidden;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+.left{
+    width: 400px;
+    float: left;
+    margin-left: 30px;
+}
+.left td{
+    border: none;
+
+}
+.left span{
+    color:rgb(30, 100, 206) ;
+}
+.right{
+    width:500px ;
+    float: right;
+
+}
+.right th{
+    height: 30px;
+    background-color: rgb(231, 229, 229);
+}
+.right td{
+    height: 30px;
+    text-align: center;
+}
+.nonl{
+    border-left: none;
+}
+.nonr{
+    border-right: none;
+}
+.tab{
+    width: 1000px;
+    overflow: hidden;
+    margin: 50px auto;
+}
+.tab th{
+    height: 100px;
+    font-size: 20px;
+    width: 500px;
+    color: #ccc;
+    box-sizing: border-box;
+}
+.tab th:hover{
+    border-bottom: 2px solid rgb(27, 175, 101);
+    color: rgb(27, 175, 101);
+}
+#bor{
+    width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    border-top: 2px solid rgba(0, 0, 0, 0.808);
+}
+#bor th{
+    height: 60px;
+    font-size: 15px;
+    font-weight: 700;
+    border-left: none;
+    border-right: none;
+}
+#bor td{
+    height: 60px;
+    font-size: 15px;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+}#bor button{
+    padding:5px;
+    font-size: 12px;
+    background-color: aquamarine;
+    color: #fff;
+    border: none;
+}

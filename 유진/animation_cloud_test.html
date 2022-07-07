@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: #333;
+        }
+        .ani{
+            width: 1295px;
+            height: 500px;
+            margin: auto;
+            margin-top: 200px;
+            animation-name:test;
+            animation-duration: 2s;
+            animation-iteration-count :infinite;
+            animation-direction: alternate;
+        }
+        .ani:hover{
+            transform: scale(1.05);
+            
+        }
+        @keyframes test{
+            100%{
+                transform: translateY(-50px);
+            }
+        }
+        .ani img{
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="ani">
+        <img src="klipartz.com.png" alt="/">
+    </div>
+</body>
+</html>
