@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Playfair+Display&display=swap');
+/*font-family: 'Playfair Display', serif;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body{
+   
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+header{
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+    box-shadow: 0 0 15px rgb(56, 48, 48);
+    position: relative;
+    text-align: center;
+    z-index: 99;
+}
+header>a{
+    width: 15%;
+    height: 23px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    margin-top: -11.5px;
+}
+header ul {
+    display: inline-block;
+}
+header ul li{
+    float: left;
+    line-height: 100px;
+    margin:0 20px ;
+}
+header ul li a{
+    font-size: 14px;
+    font-weight: 700;
+    color: #191919;
+}
+.icon{
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    margin-top: -11.5px;
+}
+.icon img {
+    float: left;
+    height: 16px;
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+aside{
+    width: 21%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #191919;
+    text-align: center;
+    z-index: 97;
+    padding-top: 100px;
+}
+aside video{
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+aside .text{
+    text-align: center;
+}
+.text h1{
+    color: darkgreen;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+.text p {
+    margin-top: 20px;
+    text-decoration: underline;
+    font-size: 15px;
+    color: #333;
+}
+#wrap{
+    width: 79%;
+    height: 100%;
+    overflow: hidden;
+    float: right;
+}
+.main{
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 100px;
+    
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.mainbg{
+    float: right;
+}
+.title{
+    width: 60%;
+    position: absolute;
+    top: 150px;
+    left: 0;
+}
+.title h1{
+    font-size: 200px;
+    font-family: 'Playfair Display', serif;
+    border-bottom: 3px solid rgb(29, 28, 28);
+    color: #000;
+    font-weight: 100;
+    line-height: 200px;
+    font-style: italic;
+}
+.title>h1::first-letter{
+    font-size: 270px;
+}
+.title p{
+    color: rgb(65, 65, 65);
+    font-size: 16px;
+    margin-top: 100px;
+}
+#wrap>h2{
+    text-align: center;
+    font-size: 30px;
+    overflow: hidden;
+    font-family: 'Playfair Display', serif;
+    margin: 100px 0;
+}
+.contents-box{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+.line{
+    width: 33.3%;
+    overflow: hidden;
+    box-sizing: border-box;
+    float: left;
+    border-right: 1px solid #ccc;
+}
+.line:nth-child(3){
+    border: none;
+}
+.box{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.box a{
+    display: block;
+    color: #191919;
+    text-decoration: underline;
+    padding:30px 0;
+    font-size: 20px;
+}
+.box p{
+    color:#ccc ;
+    font-size: 16px;
+}
+button{
+    display: block;
+    border: 1px solid red;
+    background-color: #fff;
+    width: 120px;
+    height: 50px;
+    color: #333;
+    margin: 50px auto;
+    font-size: 15px;
+    text-decoration: underline;
+}
+footer{
+    width: 100%;
+    padding: 100px 0;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 98;
+}
+footer .inner{
+    width: 73%;
+    overflow: hidden;
+    margin: auto;
+}
+.inner>a{
+    float: left;
+    line-height: 100px;
+    height: 23px;
+    overflow: hidden;
+}
+.copy{
+    float: left;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 40px;
+    line-height: 35px;
+}
+@media screen and (max-width:1400px) {
+    header ul{
+        display: none;
+    }
+    header>a{
+      width: 24%;
+    }
+    aside{
+        width: 100%;
+        position: static;
+        border: none;
+        background-color: #607976;
+        overflow: hidden;
+        padding: 50px 0;
+    }
+    aside video{
+        width: 50%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .text h1{
+        color: hotpink;
+    }
+    #wrap{
+        width: 100%;
+        float: none;
+    }
+    .title{
+        width: 100%;
+        position: static;
+        margin-top: 100px;
+    }
+    .inner>a{
+        float: none;
+        margin: auto;
+        width: 200px;
+        display: block;
+    }
+    footer .inner{
+        text-align: center;
+        width: 100%;
+    }
+    .copy{
+        text-align: center;
+        float: none;
+        margin-top: 30px;
+        margin-left: 0;
+        line-height: 20px;
+    }
+}
